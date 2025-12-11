@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetStyle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  
+  <header class="w-full bg-black text-white">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+
+      
+      <h1 class="text-3xl font-bold">PetStyle</h1>
+
+      
+      <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
+        ☰
+      </button>
+
+      
+      <nav class="hidden md:flex space-x-8 text-lg">
+        <a href="#" class="hover:text-yellow-400">Home</a>
+        <a href="#produtos" class="hover:text-yellow-400">Produtos</a>
+        <a href="#depoimentos" class="hover:text-yellow-400">Depoimentos</a>
+        <a href="#contato" class="hover:text-yellow-400">Contato</a>
+      </nav>
+
+    </div>
+
+    
+    <nav id="mobile-menu" class="hidden flex-col bg-black text-white md:hidden px-4 pb-4 space-y-4 text-lg">
+      <a href="#" class="hover:text-yellow-400">Home</a>
+      <a href="#produtos" class="hover:text-yellow-400">Produtos</a>
+      <a href="#depoimentos" class="hover:text-yellow-400">Depoimentos</a>
+      <a href="#contato" class="hover:text-yellow-400">Contato</a>
+    </nav>
+  </header>
+
+
+
+  <main>
+
+    
+    <section 
+      class="relative h-screen w-full bg-cover bg-center bg-no-repeat flex items-center justify-center"
+      style="background-image: url('./patanatural_interna_jundiaishopping-02.webp');"
+    >
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <div class="relative z-10 text-center px-4">
+        <h2 class="text-5xl font-bold mb-4 text-yellow-500">
+          Bem-vindo ao PetStyle!
+        </h2>
+        <p class="text-white text-xl">
+          Cuidamos do seu pet com carinho e profissionalismo.
+        </p>
+      </div>
+    </section>
+
+    <section id="produtos" class="py-12 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Produtos</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          
+          <div class="bg-white p-4 rounded-xl shadow">
+            <img src="p1.jpg" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-lg font-semibold mt-3">Pote horizontal</h3>
+            <p class="text-gray-600 text-sm mt-1">Pote de ração para seu pet.</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-xl shadow">
+            <img src="p2.jpg" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-lg font-semibold mt-3">Pote vertical</h3>
+            <p class="text-gray-600 text-sm mt-1">Pote com maior capacidade de água para seu pet.</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-xl shadow">
+            <img src="p3.jpg" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-lg font-semibold mt-3">Kit de banho</h3>
+            <p class="text-gray-600 text-sm mt-1">Seu Pet limpinho e cheiroso.</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-xl shadow">
+            <img src="p4.jpg" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-lg font-semibold mt-3">Caminha</h3>
+            <p class="text-gray-600 text-sm mt-1">Mais conforto impossível para seu pet.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    
+    <section id="depoimentos" class="py-16 bg-black text-white">
+      <div class="max-w-6xl mx-auto px-4">
+        
+        <h2 class="text-3xl font-bold text-center mb-10">Depoimentos</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div class="bg-gray-100 p-6 rounded-xl shadow text-center">
+            <img src="https://i.pravatar.cc/120?img=12" class="w-20 h-20 rounded-full mx-auto mb-4">
+            <h3 class="font-semibold text-lg text-yellow-500">Mário Silva</h3>
+            <p class="text-sm text-gray-600 mt-2">
+              “Meu cachorro sempre sai lindo e cheiroso! O atendimento é impecável.”
+            </p>
+          </div>
+
+          <div class="bg-gray-100 p-6 rounded-xl shadow text-center">
+            <img src="https://i.pravatar.cc/120?img=32" class="w-20 h-20 rounded-full mx-auto mb-4">
+            <h3 class="font-semibold text-lg text-yellow-500">Ana Moreira</h3>
+            <p class="text-sm text-gray-600 mt-2">
+              “Serviço de qualidade e muito cuidado com os pets. Recomendo demais!”
+            </p>
+          </div>
+
+          <div class="bg-gray-100 p-6 rounded-xl shadow text-center">
+            <img src="https://i.pravatar.cc/120?img=50" class="w-20 h-20 rounded-full mx-auto mb-4">
+            <h3 class="font-semibold text-lg text-yellow-500">Fred de Paula</h3>
+            <p class="text-sm text-gray-600 mt-2">
+              “O melhor petshop da região! Meu gato adora o atendimento.”
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="contato" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4">
+
+        <h2 class="text-3xl font-bold text-center mb-10">Contato</h2>
+
+        <div class="bg-white shadow p-8 rounded-xl max-w-xl mx-auto text-center">
+
+          <p class="text-lg text-gray-700 mb-4">
+            Entre em contato conosco para agendamentos, dúvidas ou informações.
+          </p>
+
+          <div class="mt-4">
+            <p class="font-semibold text-gray-900">Telefone</p>
+            <a href="tel:+5511999999999" class="text-blue-600 hover:underline text-lg">
+              (11) 99999-9999
+            </a>
+          </div>
+
+          <div class="mt-6">
+            <p class="font-semibold text-gray-900">E-mail</p>
+            <a href="mailto:contato@petstyle.com" class="text-blue-600 hover:underline text-lg">
+              contato@petstyle.com
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+  </main>
+
+
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
